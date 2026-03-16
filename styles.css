@@ -1,0 +1,217 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f2ece6;
+color:#333;
+}
+
+
+
+/* NAV */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#b89a7a;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+z-index:1000;
+}
+
+.logo{
+color:white;
+font-size:20px;
+letter-spacing:1px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+nav a:hover{
+opacity:0.7;
+}
+
+
+
+/* HERO */
+
+header{
+height:100vh;
+background:linear-gradient(rgba(184,154,122,0.7),rgba(184,154,122,0.7)),
+url(render.jpg) center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+letter-spacing:2px;
+}
+
+.autor{
+margin-top:10px;
+font-size:22px;
+}
+
+
+
+/* SECCIONES */
+
+section{
+padding:100px 20px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+color:#b89a7a;
+margin-bottom:30px;
+font-size:30px;
+}
+
+
+
+/* SOBRE */
+
+.sobre{
+text-align:center;
+font-size:18px;
+line-height:1.7;
+}
+
+
+
+/* GRID */
+
+.grid{
+display:flex;
+gap:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+
+
+/* CARDS */
+
+.card{
+background:white;
+padding:40px;
+width:280px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card a{
+display:inline-block;
+margin-top:20px;
+background:#7a5a3a;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.card a:hover{
+background:#a38566;
+}
+
+
+
+/* SERVICIOS */
+
+.servicios{
+background:#e9e2db;
+}
+
+
+
+/* CONTACTO */
+
+.contacto{
+text-align:center;
+background:#efe9e3;
+font-size:18px;
+line-height:1.8;
+}
+
+
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#b89a7a;
+color:white;
+}
+
+
+
+/* BOTONES FLOTANTES */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+}
+
+.instagram{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#e1306c;
+color:white;
+font-size:28px;
+padding:15px;
+border-radius:50%;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.grid{
+flex-direction:column;
+align-items:center;
+}
+
+}
